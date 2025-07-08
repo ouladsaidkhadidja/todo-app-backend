@@ -1,0 +1,49 @@
+### GET /
+GET http://localhost:5003
+
+### Regester a user post /auth/register
+POST http://localhost:5003/auth/register
+Content-Type: application/json
+
+{
+  "username": "dinapite@gmail.com",
+  "password": "579814fd6"
+}
+
+### login a user  post /auth/login
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+  "username": "dinapite@gmail.com",
+  "password": "579814fd6"
+}
+
+### fetch all todos GET /TODOS (protected)
+###GET http://localhost:5003/todos
+###Authorization:
+
+
+### creat a new todo POST /TODOS (protected)
+POST http://localhost:5003/todos
+Authorization:
+
+
+Content-Type: application/json
+
+{
+  "task": "finish coding"
+
+}
+
+### update a todo PUT /TODOS/:ID (protected)
+
+PUT http://localhost:5003/todos/2?page=4
+Authorization: 
+Content-Type: application/json
+
+{
+  "completed": 1
+}
+
+
